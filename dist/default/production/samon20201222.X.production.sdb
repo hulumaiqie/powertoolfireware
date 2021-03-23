@@ -1,0 +1,691 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1503 ]
+[d frameptr 6 ]
+"87 I:\AC hammer software\samon20210301\mcc_generated_files/adc.c
+[e E2935 . `uc
+NTC 4
+TEST 5
+ADJ 7
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"104 I:\AC hammer software\samon20210301\main.c
+[e E3099 tmr1fuctionswitch `uc
+gate_trg 1
+counter 2
+]
+"113
+[e E3104 tmr0fuctionswitch `uc
+trg 1
+dlycnt 2
+dlycnt_processing 3
+]
+"124
+[e E3110 Motor_RpmType `uc
+Lower_than_400hz 0
+Between_400hz_and_1000hz 1
+Between_1000hz_and_1500hz 2
+More_than_1500hz 3
+More_than_1800hz 5
+]
+"142
+[e E3118 Motor_run_status_machine `uc
+Init_status 0
+low_speed_status 1
+mid_speed_status 2
+hi_speed_status 3
+mid_speed_adj 4
+hi_speed_adj 5
+motor_block_status 6
+motor_fault_status 7
+motor_stop_status 8
+motor_capture_status 10
+motor_startup 10
+speedauto_status 12
+]
+"185
+[e E3008 . `uc
+NTC 4
+TEST 5
+ADJ 7
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"146 I:\AC hammer software\samon20210301\main.c
+[v _INT_T2 INT_T2 `(v  1 e 1 0 ]
+"494
+[v _INT_RA2 INT_RA2 `(v  1 e 1 0 ]
+"560
+[v _main main `(v  1 e 1 0 ]
+"603
+[v _tmr1gate_func_init tmr1gate_func_init `(v  1 e 1 0 ]
+"619
+[v _tmr1cnt_func_init tmr1cnt_func_init `(v  1 e 1 0 ]
+"631
+[v _tmr0reloadcnt tmr0reloadcnt `(v  1 e 1 0 ]
+"681
+[v _rpm_celiang rpm_celiang `(ui  1 e 2 0 ]
+"723
+[v _led_blink led_blink `(v  1 e 1 0 ]
+"65 I:\AC hammer software\samon20210301\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"113
+[v _ADC_GetConversion ADC_GetConversion `(ui  1 e 2 0 ]
+"58 I:\AC hammer software\samon20210301\mcc_generated_files/cmp1.c
+[v _CMP1_Initialize CMP1_Initialize `(v  1 e 1 0 ]
+"52 I:\AC hammer software\samon20210301\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 I:\AC hammer software\samon20210301\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"67
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"75
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"57 I:\AC hammer software\samon20210301\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"110
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"122
+[v _IOCAF2_ISR IOCAF2_ISR `(v  1 e 1 0 ]
+"137
+[v _IOCAF2_SetInterruptHandler IOCAF2_SetInterruptHandler `(v  1 e 1 0 ]
+"144
+[v _IOCAF2_DefaultInterruptHandler IOCAF2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 I:\AC hammer software\samon20210301\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"108
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"130
+[v _TMR0_CallBack TMR0_CallBack `(v  1 e 1 0 ]
+"140
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"144
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 I:\AC hammer software\samon20210301\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"93
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+"99
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+"105
+[v _TMR1_ReadTimer TMR1_ReadTimer `(ui  1 e 2 0 ]
+"120
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"142
+[v _TMR1_Reload TMR1_Reload `(v  1 e 1 0 ]
+"157
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"169
+[v _TMR1_CallBack TMR1_CallBack `(v  1 e 1 0 ]
+"178
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"182
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 I:\AC hammer software\samon20210301\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"119
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"130
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+"140
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+"144
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+[s S197 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"372 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic16f1503.h
+[s S206 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S211 . 1 `S197 1 . 1 0 `S206 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES211  1 e 1 @11 ]
+[s S762 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"442
+[u S769 . 1 `S762 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES769  1 e 1 @12 ]
+[s S433 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"543
+[u S441 . 1 `S433 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES441  1 e 1 @17 ]
+"639
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"666
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"686
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"706
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S533 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"728
+[s S540 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[u S546 . 1 `S533 1 . 1 0 `S540 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES546  1 e 1 @24 ]
+"778
+[v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
+[s S563 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+"798
+[s S571 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+]
+[u S574 . 1 `S563 1 . 1 0 `S571 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES574  1 e 1 @25 ]
+"848
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"868
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"888
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S664 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"909
+[s S668 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S676 . 1 `S664 1 . 1 0 `S668 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES676  1 e 1 @28 ]
+"959
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1009
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S414 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1075
+[u S422 . 1 `S414 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES422  1 e 1 @145 ]
+"1171
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+[s S88 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1194
+[s S95 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S102 . 1 `S88 1 . 1 0 `S95 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES102  1 e 1 @149 ]
+"1311
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1370
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1476
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1496
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1516
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S290 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"1541
+[s S294 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S302 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S305 . 1 `S290 1 . 1 0 `S294 1 . 1 0 `S302 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES305  1 e 1 @157 ]
+"1596
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1643
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
+"1691
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S840 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"1706
+[u S847 . 1 `S840 1 . 1 0 ]
+[v _LATAbits LATAbits `VES847  1 e 1 @268 ]
+"1736
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S51 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"1751
+[u S58 . 1 `S51 1 . 1 0 ]
+[v _LATCbits LATCbits `VES58  1 e 1 @270 ]
+"1786
+[v _CM1CON0 CM1CON0 `VEuc  1 e 1 @273 ]
+"1843
+[v _CM1CON1 CM1CON1 `VEuc  1 e 1 @274 ]
+[s S483 . 1 `uc 1 MC1OUT 1 0 :1:0 
+`uc 1 MC2OUT 1 0 :1:1 
+]
+"2055
+[u S486 . 1 `S483 1 . 1 0 ]
+[v _CMOUTbits CMOUTbits `VES486  1 e 1 @277 ]
+"2070
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2272
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"2317
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2364
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2601
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+[s S165 . 1 `uc 1 IOCAP0 1 0 :1:0 
+`uc 1 IOCAP1 1 0 :1:1 
+`uc 1 IOCAP2 1 0 :1:2 
+`uc 1 IOCAP3 1 0 :1:3 
+`uc 1 IOCAP4 1 0 :1:4 
+`uc 1 IOCAP5 1 0 :1:5 
+]
+"3361
+[s S172 . 1 `uc 1 IOCAP 1 0 :6:0 
+]
+[u S174 . 1 `S165 1 . 1 0 `S172 1 . 1 0 ]
+[v _IOCAPbits IOCAPbits `VES174  1 e 1 @913 ]
+[s S143 . 1 `uc 1 IOCAN0 1 0 :1:0 
+`uc 1 IOCAN1 1 0 :1:1 
+`uc 1 IOCAN2 1 0 :1:2 
+`uc 1 IOCAN3 1 0 :1:3 
+`uc 1 IOCAN4 1 0 :1:4 
+`uc 1 IOCAN5 1 0 :1:5 
+]
+"3419
+[s S150 . 1 `uc 1 IOCAN 1 0 :6:0 
+]
+[u S152 . 1 `S143 1 . 1 0 `S150 1 . 1 0 ]
+[v _IOCANbits IOCANbits `VES152  1 e 1 @914 ]
+[s S121 . 1 `uc 1 IOCAF0 1 0 :1:0 
+`uc 1 IOCAF1 1 0 :1:1 
+`uc 1 IOCAF2 1 0 :1:2 
+`uc 1 IOCAF3 1 0 :1:3 
+`uc 1 IOCAF4 1 0 :1:4 
+`uc 1 IOCAF5 1 0 :1:5 
+]
+"3477
+[s S128 . 1 `uc 1 IOCAF 1 0 :6:0 
+]
+[u S130 . 1 `S121 1 . 1 0 `S128 1 . 1 0 ]
+[v _IOCAFbits IOCAFbits `VES130  1 e 1 @915 ]
+"60 I:\AC hammer software\samon20210301\main.c
+[v _v_adj v_adj `ui  1 e 2 0 ]
+[v _v_ntc v_ntc `ui  1 e 2 0 ]
+[v _v_test v_test `ui  1 e 2 0 ]
+"61
+[v _trigger trigger `uc  1 e 1 0 ]
+"64
+[v _v_adj_filter v_adj_filter `[4]ui  1 e 8 0 ]
+"65
+[v _tmr0cnt tmr0cnt `ui  1 e 2 0 ]
+"66
+[v _cnt_adc cnt_adc `ui  1 e 2 0 ]
+"67
+[v _v_adj_slow v_adj_slow `ui  1 e 2 0 ]
+"68
+[v _count count `uc  1 e 1 0 ]
+"69
+[v _count_sta count_sta `uc  1 e 1 0 ]
+"70
+[v _ra2sta ra2sta `uc  1 e 1 0 ]
+"71
+[v _overheatcnt overheatcnt `uc  1 e 1 0 ]
+"72
+[v _carbonbrushoutcnt carbonbrushoutcnt `uc  1 e 1 0 ]
+"73
+[v _switch_count switch_count `uc  1 s 1 switch_count ]
+"74
+[v _t2_last_tick t2_last_tick `ui  1 s 2 t2_last_tick ]
+"75
+[v _t1_last_tick t1_last_tick `ui  1 s 2 t1_last_tick ]
+"76
+[v _t0_tick t0_tick `ui  1 s 2 t0_tick ]
+"77
+[v _start_switchpushflag start_switchpushflag `uc  1 e 1 0 ]
+"79
+[v _init_flag init_flag `uc  1 s 1 init_flag ]
+"80
+[v _cmp1cnt cmp1cnt `ui  1 s 2 cmp1cnt ]
+"82
+[v _cnt_rpmcapture cnt_rpmcapture `ui  1 s 2 cnt_rpmcapture ]
+"83
+[v _cnt cnt `ui  1 s 2 cnt ]
+"84
+[v _flag_L1 flag_L1 `uc  1 s 1 flag_L1 ]
+"85
+[v _flag_L2 flag_L2 `uc  1 s 1 flag_L2 ]
+"86
+[v _flag_blink flag_blink `uc  1 s 1 flag_blink ]
+"95
+[v _reloading_val reloading_val `ui  1 s 2 reloading_val ]
+"113
+[v _Tmr0fuctionswitch Tmr0fuctionswitch `E3104  1 e 1 0 ]
+"124
+[v _Motor_Rpm_Mode Motor_Rpm_Mode `E3110  1 e 1 0 ]
+"142
+[v _Motor_run_status Motor_run_status `E3118  1 e 1 0 ]
+"54 I:\AC hammer software\samon20210301\mcc_generated_files/pin_manager.c
+[v _IOCAF2_InterruptHandler IOCAF2_InterruptHandler `*.37(v  1 e 2 0 ]
+"58 I:\AC hammer software\samon20210301\mcc_generated_files/tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
+"59
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"57 I:\AC hammer software\samon20210301\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEui  1 e 2 0 ]
+"58
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"58 I:\AC hammer software\samon20210301\mcc_generated_files/tmr2.c
+[v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
+"560 I:\AC hammer software\samon20210301\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"601
+} 0
+"50 I:\AC hammer software\samon20210301\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"65
+} 0
+"75
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"79
+} 0
+"64 I:\AC hammer software\samon20210301\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"140
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 7 ]
+"142
+} 0
+"64 I:\AC hammer software\samon20210301\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"178
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 7 ]
+"180
+} 0
+"64 I:\AC hammer software\samon20210301\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"140
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 7 ]
+"142
+} 0
+"57 I:\AC hammer software\samon20210301\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"108
+} 0
+"137
+[v _IOCAF2_SetInterruptHandler IOCAF2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCAF2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 7 ]
+"139
+} 0
+"67 I:\AC hammer software\samon20210301\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"58 I:\AC hammer software\samon20210301\mcc_generated_files/cmp1.c
+[v _CMP1_Initialize CMP1_Initialize `(v  1 e 1 0 ]
+{
+"67
+} 0
+"65 I:\AC hammer software\samon20210301\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"52 I:\AC hammer software\samon20210301\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"82
+} 0
+"119 I:\AC hammer software\samon20210301\mcc_generated_files/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"128
+} 0
+"130
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+{
+"138
+} 0
+"146 I:\AC hammer software\samon20210301\main.c
+[v _INT_T2 INT_T2 `(v  1 e 1 0 ]
+{
+"190
+[v INT_T2@i i `uc  1 a 1 13 ]
+"439
+[v INT_T2@last_switch_count last_switch_count `uc  1 s 1 last_switch_count ]
+"492
+} 0
+"144 I:\AC hammer software\samon20210301\mcc_generated_files/tmr2.c
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"147
+} 0
+"603 I:\AC hammer software\samon20210301\main.c
+[v _tmr1gate_func_init tmr1gate_func_init `(v  1 e 1 0 ]
+{
+"617
+} 0
+"681
+[v _rpm_celiang rpm_celiang `(ui  1 e 2 0 ]
+{
+"683
+[v rpm_celiang@a a `ui  1 a 2 0 ]
+"720
+} 0
+"99 I:\AC hammer software\samon20210301\mcc_generated_files/tmr1.c
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+{
+"103
+} 0
+"142
+[v _TMR1_Reload TMR1_Reload `(v  1 e 1 0 ]
+{
+"145
+} 0
+"105
+[v _TMR1_ReadTimer TMR1_ReadTimer `(ui  1 e 2 0 ]
+{
+"107
+[v TMR1_ReadTimer@readVal readVal `ui  1 a 2 7 ]
+"109
+[v TMR1_ReadTimer@readValLow readValLow `uc  1 a 1 10 ]
+"108
+[v TMR1_ReadTimer@readValHigh readValHigh `uc  1 a 1 9 ]
+"118
+} 0
+"723 I:\AC hammer software\samon20210301\main.c
+[v _led_blink led_blink `(v  1 e 1 0 ]
+{
+"782
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"113 I:\AC hammer software\samon20210301\mcc_generated_files/adc.c
+[v _ADC_GetConversion ADC_GetConversion `(ui  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E2935  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E2935  1 a 1 wreg ]
+"116
+[v ADC_GetConversion@channel channel `E2935  1 a 1 3 ]
+"134
+} 0
+"157 I:\AC hammer software\samon20210301\mcc_generated_files/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"167
+} 0
+"169
+[v _TMR1_CallBack TMR1_CallBack `(v  1 e 1 0 ]
+{
+"176
+} 0
+"182
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"185
+} 0
+"619 I:\AC hammer software\samon20210301\main.c
+[v _tmr1cnt_func_init tmr1cnt_func_init `(v  1 e 1 0 ]
+{
+"629
+} 0
+"108 I:\AC hammer software\samon20210301\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"110
+[v TMR0_ISR@CountCallBack CountCallBack `VEui  1 s 2 CountCallBack ]
+"128
+} 0
+"130
+[v _TMR0_CallBack TMR0_CallBack `(v  1 e 1 0 ]
+{
+"138
+} 0
+"144
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"147
+} 0
+"631 I:\AC hammer software\samon20210301\main.c
+[v _tmr0reloadcnt tmr0reloadcnt `(v  1 e 1 0 ]
+{
+"679
+} 0
+"110 I:\AC hammer software\samon20210301\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"117
+} 0
+"122
+[v _IOCAF2_ISR IOCAF2_ISR `(v  1 e 1 0 ]
+{
+"132
+} 0
+"494 I:\AC hammer software\samon20210301\main.c
+[v _INT_RA2 INT_RA2 `(v  1 e 1 0 ]
+{
+"554
+} 0
+"144 I:\AC hammer software\samon20210301\mcc_generated_files/pin_manager.c
+[v _IOCAF2_DefaultInterruptHandler IOCAF2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"147
+} 0
+"120 I:\AC hammer software\samon20210301\mcc_generated_files/tmr1.c
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `ui  1 p 2 0 ]
+"140
+} 0
+"93
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+{
+"97
+} 0
